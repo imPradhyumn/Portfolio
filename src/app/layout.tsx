@@ -11,7 +11,7 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Pradhyumn's Portfolio",
-  description: "A portfolio website for software developer",
+  description: "A portfolio for software developer",
   themeColor: "dark",
   authors: {
     name: "Pradhyumn Sharma",
@@ -34,6 +34,13 @@ export const metadata: Metadata = {
     "flask",
     "javascript",
   ],
+  appleWebApp: true,
+  openGraph: {
+    type: "website",
+    url: "https://im-pradhyumn.vercel.sh",
+    description: "A portfolio website for software developer",
+    siteName: "Pradhyumn's Portfolio",
+  },
 };
 
 export default function RootLayout({
@@ -44,11 +51,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <Head>
-        <meta name="viewport" content="width=device-width,initial-scale=1" />
-        <meta name="description" content="Personal Portfolio Website" />
-        <meta name="title" content="imPradhyumn" />
-        <meta name="type" content="website" />
-        <meta name="url" content="https://im-pradhyumn.vercel.sh" />
+        <meta property="og:type" content="website" />
       </Head>
       <body className={inter.className}>
         <Navbar />
