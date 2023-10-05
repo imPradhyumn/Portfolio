@@ -21,6 +21,8 @@ export const metadata: Metadata = {
   creator: "Pradhyumn Sharma",
   keywords: [
     "portfolio",
+    "developer",
+    "software",
     "web developer",
     "front end",
     "full stack",
@@ -37,7 +39,7 @@ export const metadata: Metadata = {
   appleWebApp: true,
   openGraph: {
     type: "website",
-    url: "https://im-pradhyumn.vercel.sh",
+    url: "https://im-pradhyumn.vercel.app",
     description: "A portfolio website for software developer",
     siteName: "Pradhyumn's Portfolio",
   },
