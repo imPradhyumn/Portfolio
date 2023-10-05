@@ -1,0 +1,116 @@
+#about-me-items-container h3,
+h5 {
+  font-weight: 500 !important;
+  letter-spacing: 1px;
+  font-family: "Comic Sans MS";
+}
+
+.about-me-items-card {
+  animation: zoomIn 1.2s ease;
+}
+
+#about-me-items-container h5 {
+  font-style: italic;
+}
+
+#about-me-container {
+  width: 75%;
+  margin: 2.5rem auto 1.5rem auto;
+}
+
+#about-me-para-container {
+  height: 210px;
+  width: 100%;
+  overflow-y: hidden;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 1rem;
+  color: white;
+  line-height: 1.4;
+  transition: height 1s ease;
+}
+
+#about-me-para-container > p {
+  font-family: monospace;
+  font-size: 0.9rem;
+}
+
+#read-more-btn {
+  margin-top: 1rem;
+  padding: 0.3rem 0.5rem;
+  background-color: rgb(20, 19, 26);
+  color: white;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 0 1px 1px rgb(0 237 253 / 0.8);
+}
+
+#about-me-items-container {
+  display: flex;
+  justify-content: space-evenly;
+  padding-top: 2rem;
+  color: white;
+  margin: 0 auto;
+}
+
+#about-me-items-container ul:not(#experience-list) {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+#about-me-items-container ul {
+  height: fit-content;
+  padding: 1rem 2.5rem;
+  margin-top: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 0 3px rgb(0 237 253 / 0.8);
+  font-weight: 100 !important;
+  line-height: 1.6;
+}
+
+#about-me-items-container div > h2 {
+  font-family: "Comic Sans MS";
+  letter-spacing: 2px;
+}
+
+#about-me-items-container li {
+  list-style-type: disc;
+}
+
+#about-me-items-container li > h3 {
+  color: var(--nav-link-color);
+}
+
+/* Media-Queries */
+
+@media (width>=700px) and (width<=900px) {
+  #about-me-items-container ul {
+    padding: 1rem 1.9rem;
+  }
+}
+
+@media (width<=700px) {
+  #about-me-items-container {
+    flex-direction: column;
+    width: 95%;
+    gap: 2rem;
+    padding: 1rem 1.2rem;
+    margin-top: 1rem;
+  }
+
+  #about-me-container {
+    width: 85%;
+  }
+}
+
+/* Animations */
+
+@keyframes zoomIn {
+  from {
+    transform: scale(0.5);
+  }
+  to {
+    transform: scale(1);
+  }
+}

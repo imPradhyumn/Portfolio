@@ -1,0 +1,26 @@
+#projects-items-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  place-items: center;
+  justify-content: center;
+  padding: 2rem;
+  border-radius: 10px;
+  row-gap: 4rem;
+  margin-top: 2rem;
+}
+
+/* Media Queries */
+
+@media screen and (max-width: 800px) {
+  #projects-items-container {
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 2rem;
+  }
+}
+
+@media screen and (width <= 700px) {
+  #projects-items-container {
+    grid-template-columns: repeat(1, 1fr);
+    column-gap: 2rem;
+  }
+}

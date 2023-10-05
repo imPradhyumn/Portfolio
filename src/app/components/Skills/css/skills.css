@@ -1,0 +1,137 @@
+#skills-items-container {
+  display: flex;
+  color: white;
+  justify-content: space-between;
+  width: 100%;
+  padding: 2rem 4.5rem;
+}
+
+.skill-item > span {
+  letter-spacing: 1px;
+  font-size: 0.8rem;
+}
+
+.skill-item {
+  display: flex;
+  color: white;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  width: 100%;
+  font-size: 13px;
+}
+
+.skill-item > figure {
+  display: flex;
+  gap: 0.3rem;
+  align-items: center;
+}
+
+.item-break {
+  flex-basis: 100%;
+}
+
+.cards-container {
+  width: 27%;
+}
+
+.skill-card {
+  position: relative;
+  border-radius: 12px;
+  z-index: 999;
+}
+
+.skill-card > div {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+  background-color: rgb(24, 23, 31);
+  box-shadow: 0 0 3px rgb(0 0 0 / 0.8);
+  padding: 1.4rem 1.3rem;
+  padding-top: 3rem;
+  border-radius: inherit;
+  animation: animate-skill-card 1.5s ease;
+  overflow: hidden;
+  text-align: center;
+  transition: transform 0.4s ease;
+  outline: 1px solid var(--nav-link-color);
+}
+
+.skill-card::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: inherit;
+  background-color: var(--main-color);
+  z-index: -1;
+  outline: 1px solid var(--nav-link-color);
+  transform: translate(-10px, 10px);
+}
+
+.skill-card > header > h3 {
+  margin-bottom: 0.4rem;
+  position: absolute;
+  left: 35px;
+  top: -22px;
+  width: 150px;
+  background-color: rgb(24, 23, 31);
+  font-size: 1.2rem;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 0.4rem 0;
+  letter-spacing: 1px;
+  border: 1px solid var(--nav-link-color);
+  font-family: Yellowtail, "Courier New", Courier, monospace;
+}
+
+/* Media Queries */
+
+@media (width<=950px) and (width>=700px) {
+  .cards-container {
+    width: 31%;
+  }
+
+  .skill-card::before {
+    display: none;
+  }
+
+  #skills-items-container {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+}
+
+@media (width <= 700px) {
+  #skills-items-container {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    padding: 1.3rem;
+    gap: 3rem;
+  }
+
+  .cards-container {
+    width: 100%;
+    margin-top: 0rem;
+  }
+
+  .skill-card > div {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    animation: unset;
+  }
+}
+
+/* Animation */
+@keyframes animate-skill-card {
+  0% {
+    height: 59px;
+  }
+  100% {
+    height: 270px;
+  }
+}

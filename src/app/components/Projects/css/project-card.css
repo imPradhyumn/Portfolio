@@ -1,0 +1,222 @@
+.project-card {
+  position: relative;
+  text-align: center;
+  height: 100%;
+  border-radius: 12px;
+  border: 1px solid var(--nav-link-color);
+  background: white;
+  /* box-shadow: 0 3px 10px rgb(0 0 0 / 0.7); */
+  box-shadow: 0 0 3px rgb(0 0 0 / 0.8);
+  background-color: rgb(24, 23, 31);
+  z-index: 99;
+}
+
+.flip-card-container {
+  width: 15rem;
+  height: 14rem;
+}
+
+.ReactFlipCard__container {
+  transition: transform 0.3s ease;
+  animation: rotateCard 1s ease;
+}
+
+.ReactFlipCard__container:hover {
+  transform: scale(1.1);
+}
+
+.flip-card-container > .ReactFlipCard__container {
+  width: 100%;
+  height: 100%;
+}
+
+.ReactFlipCard__container .ReactFlipCard__flipCardFront,
+.ReactFlipCard__flipCardBack {
+  width: 100%;
+  height: 90%;
+}
+
+.project-card > figure {
+  position: absolute;
+  width: 100px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  left: 29%;
+  top: -20px;
+  background-color: white !important;
+}
+
+.project-img {
+  width: 100% !important;
+  height: 100%;
+  object-fit: contain;
+}
+
+.front-card-body {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 1.5rem 1.3rem;
+  gap: 1.5rem;
+}
+
+.front-card-body > h3 {
+  letter-spacing: 1px;
+  font-size: 1rem;
+  font-family: cursive, "Lucida Sans Regular";
+}
+
+.techstack-btn {
+  padding: 0.23rem 0.6rem;
+  font-weight: 600;
+  border-radius: 12px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
+.techstack-btn:hover {
+  color: var(--nav-link-color);
+  background-color: #000;
+}
+
+.tech-stack-container {
+  margin-right: auto;
+  display: flex;
+  padding: 0 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.tech-stack-container h2 {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  letter-spacing: 1px;
+  color: var(--nav-link-color);
+}
+
+.tags {
+  padding: 2px 8px;
+  margin: 3px 2px;
+  letter-spacing: 1px;
+  white-space: nowrap;
+  font-family: "Comic Sans MS", "Courier New", Courier, monospace;
+  font-size: 0.65rem;
+  color: white;
+  outline: none;
+  border: none;
+  transform: scaleY(1.1);
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.github-link-btn {
+  display: flex;
+  justify-content: center;
+  gap: 7px;
+  position: relative;
+  padding: 0.4rem 0.5rem;
+  background-color: #181717;
+  border-radius: 5px;
+  border: none;
+  outline-color: transparent;
+  cursor: pointer;
+  transition: 400ms;
+  font-family: "Comic Sans MS";
+}
+
+.github-link-btn::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 3px;
+  background: linear-gradient(135deg, #7b4397, #dc2430);
+  border-radius: inherit;
+}
+
+.github-link-btn .text {
+  color: white;
+  font-weight: 600;
+  letter-spacing: 1px;
+  font-size: 14px;
+  transition: 400ms;
+}
+
+.github-link-btn svg {
+  width: 16px;
+  height: 16px;
+  margin-bottom: 0.2rem;
+}
+
+.github-link-btn:hover {
+  background-color: white;
+}
+
+.github-link-btn:hover .text {
+  color: #181717;
+}
+
+.github-link-btn:hover svg path {
+  fill: #181717;
+  transition: 400ms;
+}
+
+.smaller-screen {
+  display: none;
+}
+
+.bigger-screen {
+  display: block;
+}
+
+/* Media Queries */
+
+@media (width<=700px) or ((width>=700px) and (width<=900px)) {
+  .smaller-screen {
+    display: block;
+  }
+
+  .card-body > h3 {
+    margin-top: 1rem;
+    width: 90%;
+  }
+
+  .bigger-screen {
+    display: none;
+  }
+
+  .project-card > figure {
+    left: 33%;
+  }
+
+  .card-body {
+    height: 14rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1rem;
+    padding-bottom: 1rem;
+  }
+
+  .ReactFlipCard__container:hover {
+    transform: unset;
+  }
+}
+
+/* Animation */
+
+@keyframes rotateCard {
+  from {
+    transform: rotateY(180deg);
+  }
+  to {
+    transform: rotateY(0deg);
+  }
+}

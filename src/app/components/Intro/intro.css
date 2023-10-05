@@ -1,0 +1,114 @@
+#home-container {
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr 1fr;
+  width: 85%;
+  margin: 0 auto;
+  padding-left: 4rem;
+  padding-right: 2rem;
+  padding-top: 5rem;
+  align-items: center;
+  /* background: url("../../public/static/smoke5.jpg") no-repeat;
+    background-size: cover;
+    background-blend-mode: screen; */
+  /* box-shadow: 0 0 8px 8px white inset; */
+}
+
+/* .container-shadow {
+    /* rgb(59,66,80) */
+
+#intro-details-container {
+  width: 45%;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+  min-width: 400px;
+}
+
+#intro-para-container {
+  animation: animate-intro-text 1s ease;
+}
+
+#intro-para-container > p {
+  font-size: 14px;
+  line-height: 1.3rem;
+  font-family: monospace;
+}
+
+#greet-text {
+  animation: animate-name 0.8s ease;
+  background: linear-gradient(to left, #f32170, #ff6b08, #cf23cf, #eedd44);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+#name-text {
+  animation: animate-name 1.2s ease;
+  margin-top: -12px;
+  background: linear-gradient(to right, #f32170, #ff6b08, #cf23cf, #eedd44);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+#img-container > img {
+  width: 90%;
+  height: 90%;
+  object-fit: contain;
+  animation: animate-image 1s ease;
+}
+
+/* Media Queries */
+
+@media (max-width: 950px) {
+  #home-container {
+    justify-content: flex-start;
+    flex-direction: column;
+    padding: 0;
+    gap: 3rem;
+    display: flex;
+    padding-top: 3rem;
+  }
+
+  #intro-details-container {
+    flex-direction: column;
+    padding: 0;
+    gap: 1rem;
+    display: flex;
+    width: 90%;
+    padding: 0 2rem;
+  }
+}
+
+/* Animations */
+
+@keyframes animate-name {
+  0% {
+    transform: translateX(-200%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes animate-image {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+@keyframes animate-intro-text {
+  from {
+    transform: translateX(150px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}

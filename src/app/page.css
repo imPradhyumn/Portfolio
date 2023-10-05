@@ -1,0 +1,150 @@
+.component-container {
+  margin: 0 auto;
+  margin-top: 4rem;
+  width: 85%;
+}
+
+.heading {
+  display: flex;
+  width: fit-content;
+  align-items: center;
+  gap: 1rem;
+  font-size: 1.7rem;
+  color: white;
+  letter-spacing: 1px;
+  font-family: "Times New Roman", Times, serif;
+  padding-left: 3.7rem;
+  background: linear-gradient(
+    to right,
+    rgb(61, 109, 245) 35%,
+    #cf23cf,
+    rgb(196, 71, 218)
+  );
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  filter: brightness(1);
+}
+
+.heading-icon {
+  font-size: 1.7rem;
+}
+
+#social-icons-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 188px;
+  position: fixed;
+  top: 45%;
+  left: 3rem;
+  /* padding: 0.8rem 0.4rem; */
+  border-radius: 30px;
+  color: white;
+  background: white;
+  background: linear-gradient(
+    to right bottom,
+    rgba(255, 255, 255, 0.05),
+    rgba(255, 255, 255, 0.05)
+  );
+  backdrop-filter: blur(1rem);
+  animation: animate-social-icons 1s ease;
+}
+
+#social-icons-container > div {
+  position: relative;
+  padding: 0 0.3rem;
+  transition: transform 0.18s ease;
+}
+
+#social-icons-container > div:hover {
+  position: relative;
+  transform: scale(1.15);
+}
+
+#social-icons-container > div::after {
+  content: attr(data-label);
+  position: absolute;
+  left: 42px;
+  bottom: 8px;
+  z-index: 99999;
+  display: none;
+  width: fit-content;
+  height: 18px;
+  padding: 0rem 0.3rem;
+  font-family: "Comic Sans MS", "Times New Roman";
+  font-size: 0.8rem;
+  color: white;
+  /* background-color: transparent;
+  box-shadow: 0 0 3px var(--nav-link-color); */
+}
+
+#social-icons-container > div:hover::after {
+  display: block;
+  z-index: 99;
+}
+
+#social-icons-container img {
+  width: 100%;
+  object-fit: contain;
+  cursor: pointer;
+}
+
+/* Media Queries */
+
+@media (width<=950px) and (width>=700px) {
+  .component-container {
+    width: 90% !important;
+    border: 1px solid red;
+  }
+  #social-icons-container {
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 0.4rem;
+    position: fixed;
+    top: unset;
+    left: 25%;
+    bottom: 0;
+    z-index: 9999;
+    height: 50px;
+    margin: 0 auto;
+    animation: none;
+  }
+}
+
+@media (width<=700px) {
+  .component-container {
+    width: 95%;
+  }
+
+  .heading {
+    padding-left: 2.5rem;
+  }
+  #social-icons-container {
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 0.4rem;
+    position: fixed;
+    top: unset;
+    bottom: 0;
+    z-index: 9999;
+    height: 50px;
+    margin: 0 auto;
+    animation: none;
+  }
+
+  #social-icons-container > div {
+    padding: 0;
+  }
+}
+
+@keyframes animate-social-icons {
+  0% {
+    height: 0px;
+    overflow: hidden;
+  }
+  100% {
+    height: 188px;
+  }
+}

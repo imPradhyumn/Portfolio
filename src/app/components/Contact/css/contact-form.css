@@ -1,0 +1,243 @@
+#contact-form-container {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  align-items: flex-end;
+  /* border: 1px solid red; */
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 4rem;
+  padding: 2rem 0;
+  /* margin-bottom: 1rem; */
+  box-shadow: 0 0 8px black;
+}
+
+#contact-form-container h3 {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  margin-right: auto;
+  font-size: 1.5rem;
+  letter-spacing: 1px;
+  color: var(--nav-link-color);
+}
+
+#contact-bg-container {
+  position: absolute;
+  left: 90px;
+  top: 22%;
+  width: 20%;
+  height: 65%;
+  border-radius: 10px;
+  box-shadow: 0 0 3px rgb(0 237 253 / 0.8);
+  z-index: 99;
+}
+
+#contact-form-container > form {
+  position: relative;
+  width: 80%;
+  height: 100%;
+  float: right;
+  /* border: 1px solid orange; */
+  background-color: var(--main-color);
+  padding-left: 10rem;
+  padding-right: 3rem;
+  padding-top: 1.5rem;
+}
+
+#contact-form-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: inherit;
+}
+
+#form-elements {
+  display: flex;
+  gap: 2.3rem;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  height: 55%;
+  float: right;
+  margin-top: 3.5rem;
+}
+
+input {
+  position: relative;
+  width: 100%;
+  padding: 0.2rem;
+  font-size: 0.9rem;
+  font-weight: 500;
+  letter-spacing: 1px;
+  color: white;
+  outline: none;
+  border: none;
+  background-color: transparent;
+  border-bottom: 2px solid white;
+}
+
+#form-elements input:focus,
+#form-elements input:not(:placeholder-shown) {
+  border-bottom: 2px solid aqua;
+}
+
+#form-elements > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  position: relative;
+  width: 45%;
+}
+
+input:placeholder-shown + label {
+  top: -2px;
+  color: white;
+}
+
+input:focus + label {
+  top: -22px;
+  color: var(--nav-link-color);
+}
+
+input::placeholder {
+  visibility: hidden;
+}
+
+label {
+  position: absolute;
+  top: -22px;
+  padding-left: 0.1rem;
+  color: var(--nav-link-color);
+  font-family: "Comic Sans MS";
+  pointer-events: none;
+  transition: top 0.2s ease;
+}
+
+input[type="text"]:invalid {
+  animation: shake 0.15s linear;
+  border-bottom: 2px solid red !important;
+}
+
+input[type="email"]:invalid {
+  animation: shake 0.15s linear;
+  border-bottom: 2px solid red !important;
+}
+
+@keyframes shake {
+  0% {
+    transform: rotateZ(2deg);
+  }
+
+  50% {
+    transform: rotateZ(-2deg);
+  }
+
+  100% {
+    transform: rotateZ(2deg);
+  }
+}
+
+#message-box-container,
+#btn-container-outer {
+  flex-basis: 100%;
+}
+
+#btn-container-inner {
+  position: relative;
+  width: 30%;
+  margin: 0 auto;
+}
+
+#sent-pseudo-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  overflow-x: hidden;
+  height: 100%;
+  background-color: var(--nav-link-color);
+  pointer-events: none;
+  transition: width 0.5s ease-in-out;
+}
+
+#form-elements button[type="submit"] {
+  height: fit-content;
+  width: 100%;
+  padding: 0.6rem 0;
+  font-size: 1rem;
+  font-weight: 400;
+  letter-spacing: 1px;
+  /* border-radius: 20px; */
+  background-color: var(--main-color);
+  box-shadow: 0 0 3px rgb(0 237 253 / 0.8);
+  outline: transparent;
+  border: none;
+  color: var(--nav-link-color);
+  cursor: pointer;
+}
+
+#send-btn:active {
+  transform: scale(0.9);
+}
+
+#send-btn:active + #sent-pseudo-btn {
+  transform: scale(0.9);
+}
+
+/* #form-elements button[type="submit"]::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  /* border-radius: inherit; 
+  width: 0%;
+  height: 100%;
+  font-size: 1rem;
+  font-weight: 600;
+  background-color: var(--nav-link-color);
+  transition: width 0.5s ease;
+}
+
+#form-elements button[type="submit"]:focus::before {
+  content: "Sent!!";
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  letter-spacing: 1px;
+  color: black;
+} */
+
+/*  */
+
+@media (width<=900px) {
+  #contact-form-container > form {
+    float: none;
+    width: 100%;
+    padding: 2rem;
+    /* box-shadow: 0 0 3px rgb(0 237 253 / 0.8); */
+  }
+
+  #contact-form-container {
+    padding: 0.5rem 0;
+  }
+
+  #contact-bg-container {
+    display: none;
+  }
+
+  #form-elements {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  #contact-form-container > form::before {
+    display: none;
+  }
+
+  #form-elements > div {
+    width: 100%;
+  }
+}
