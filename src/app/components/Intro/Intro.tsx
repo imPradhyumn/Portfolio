@@ -7,8 +7,8 @@ function Intro() {
   return (
     <div id="home-container">
       <div id="intro-details-container">
-        <h2 id="greet-text">Hello World, I'm</h2>
-        <h1 id="name-text">Pradhyumn Sharma</h1>
+        <h2 id="greet-text">{"Hello World, I'm"}</h2>
+        <h1 id="name-text">{"Pradhyumn Sharma"}</h1>
         <h2 id="profession-text">
           A{" "}
           <ReactTyped strings={["Full Stack Developer"]} typeSpeed={50} loop />
@@ -16,10 +16,12 @@ function Intro() {
 
         <div id="intro-para-container">
           <p>
-            An innovative, purpose-driven engineer contributed my learning into
-            building web applications & solutions for enterprises. Seeking to
-            work in a professional ambiance that provides a space to contribute
-            my skills towards the growth of the organization.
+            {
+              "An innovative, purpose-driven engineer contributed my learning into\
+            building web applications & solutions for enterprises. Seeking to\
+            work in a professional ambiance that provides a space to contribute\
+            my skills towards the growth of the organization."
+            }
           </p>
         </div>
       </div>
