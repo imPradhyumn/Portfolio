@@ -36,39 +36,50 @@ function AboutMe() {
       <div id="about-me-container">
         <div id="about-me-para-container">
           <p>
-            Motto : "It's better to light a candle than to curse the darkness"
-            && "Failures aren't opposite of success they're the part of it"
+            {
+              "Motto : \"It's better to light a candle than to curse the darkness\
+            && \"Failures aren't opposite of success they're the part of it\""
+            }
           </p>
           <br />
           <p>
-            A passionate, persistent, purpose driven person always keen and
-            ready to learn new things. Completed my degree with honors in
-            Computer Science from Jodhpur Institute of Engineering & Technology,
-            Jodhpur, Rajasthan.{" "}
+            {
+              "A passionate, persistent, purpose driven person always keen and\
+            ready to learn new things. Completed my degree with honors in\
+            Computer Science from Jodhpur Institute of Engineering & Technology,\
+            Jodhpur, Rajasthan."
+            }
           </p>
           <br />
           <p>
-            During my college time span I grew a ample interest in programming &
-            learning new tech-stacks which pushed me to work on different
-            projects and gain practical skill-set. In the 3rd year I attended a
-            2months training for Machine Learning with Python and gained a basic
-            understanding of the same and later YouTube and others learning
-            platforms helped me gain more knowledge on it and I built few
-            projects implementing Machine Learning with Python.
+            {
+              "During my college time span I grew a ample interest in programming &\
+            learning new tech-stacks which pushed me to work on different\
+            projects and gain practical skill-set. In the 3rd year I attended a\
+            2months training for Machine Learning with Python and gained a basic\
+            understanding of the same and later YouTube and others learning\
+            platforms helped me gain more knowledge on it and I built few\
+            projects implementing Machine Learning with Python."
+            }
           </p>
           <br />
           <p>
-            I was also a active participant in extra-curricular activities such
-            as Sports and Technical Events which helped me become a good team
-            worker and improved my soft skills part.{" "}
+            {
+              "I was also a active participant in extra-curricular activities such\
+            as Sports and Technical Events which helped me become a good team\
+            worker and improved my soft skills part."
+            }
           </p>
           <br />
           <p>
-            At present, I am working in an MNC at the position of Full Stack
-            Developer and I love my job. I love when my fingers run on keyboard
-            to write code, I love when my brain is busy finding out the solution
-            of the bug. Here, in my current company, I have learned a lot, met
-            new people, networked with them and gained a lot of new skills.
+            {
+              "At present, I am working in an MNC at the position of Full Stack\
+            Developer and I love my job. I love when my fingers run on keyboard\
+            to write code, I love when my brain is busy finding out the solution\
+            of the bug. Here, in my current company, I have learned a lot, met\
+            new people, networked with them and gained a lot of new skills."
+            }
+            \
           </p>
         </div>
 
