@@ -38,8 +38,7 @@ export const metadata: Metadata = {
   ],
   appleWebApp: true,
   verification: {
-    google:
-      "google-site-verification=cNKCXZx5mPFalGzBzQdK4hCbnKeINKlsB514UM6ux_E",
+    google: "xB0od4QV2-rEeAiOHVgiCNUiSH1VFNdo_jSMaOfO1Wg",
   },
   openGraph: {
     type: "website",
