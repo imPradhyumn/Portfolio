@@ -37,6 +37,10 @@ export const metadata: Metadata = {
     "javascript",
   ],
   appleWebApp: true,
+  verification: {
+    google:
+      "google-site-verification=cNKCXZx5mPFalGzBzQdK4hCbnKeINKlsB514UM6ux_E",
+  },
   openGraph: {
     type: "website",
     url: "https://im-pradhyumn.vercel.app",
