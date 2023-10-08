@@ -10,6 +10,7 @@ config.autoAddCss = false;
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://im-pradhyumn.vercel.app"),
   title: "Pradhyumn's Portfolio",
   description: "A portfolio for software developer",
   themeColor: "dark",
@@ -60,7 +61,7 @@ export default function RootLayout({
       </Head>
       <body className={inter.className}>
         <Navbar />
-        <main style={{ marginTop: "3rem" }}>{children}</main>
+        <main>{children}</main>
       </body>
     </html>
   );
