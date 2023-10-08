@@ -13,11 +13,37 @@ function Languages({
     name: string;
     percent: string;
     imgName: string;
+    height: number;
+    width: number;
   }[] = [
-    { name: "Python", percent: "75%", imgName: "html.png" },
-    { name: "Java", percent: "75%", imgName: "html.png" },
-    { name: "C/C++", percent: "70%", imgName: "html.png" },
-    { name: "Javascript", percent: "70%", imgName: "html.png" },
+    {
+      name: "Python",
+      percent: "75%",
+      imgName: "python.png",
+      height: 13,
+      width: 13,
+    },
+    {
+      name: "Java",
+      percent: "75%",
+      imgName: "java.png",
+      height: 18,
+      width: 18,
+    },
+    {
+      name: "C/C++",
+      percent: "70%",
+      imgName: "c++.png",
+      height: 16,
+      width: 16,
+    },
+    {
+      name: "Javascript",
+      percent: "70%",
+      imgName: "javascript.png",
+      height: 12,
+      width: 12,
+    },
   ];
 
   return (
@@ -36,8 +62,8 @@ function Languages({
                     loading="lazy"
                     src={`${imageBasePath}/${skill.imgName}`}
                     alt=""
-                    width="13"
-                    height="13"
+                    width={skill.width}
+                    height={skill.height}
                   />
                   <span>{skill.name}</span>
                 </figure>

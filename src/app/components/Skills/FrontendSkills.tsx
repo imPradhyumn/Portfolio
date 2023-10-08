@@ -13,11 +13,17 @@ function FrontendSkills({
     name: string;
     percent: string;
     imgName: string;
+    style?: {};
   }[] = [
-    { name: "React JS", percent: "75%", imgName: "html.png" },
-    { name: "Next JS", percent: "75%", imgName: "html.png" },
+    { name: "React JS", percent: "75%", imgName: "reactjs.png" },
+    {
+      name: "Next JS",
+      percent: "75%",
+      imgName: "nextjs1.svg",
+      style: { filter: "invert(1)" },
+    },
     { name: "HTML/CSS", percent: "70%", imgName: "html.png" },
-    { name: "Tailwind", percent: "70%", imgName: "html.png" },
+    { name: "Tailwind", percent: "70%", imgName: "tailwind.png" },
   ];
 
   return (
@@ -36,6 +42,7 @@ function FrontendSkills({
                     alt=""
                     width="13"
                     height="13"
+                    style={skill.style}
                   />
                   <span>{skill.name}</span>
                 </figure>

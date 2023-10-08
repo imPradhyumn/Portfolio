@@ -13,11 +13,25 @@ function BackendSkills({
     name: string;
     percent: string;
     imgName: string;
+    style?: {};
+    width?: number;
+    height?: number;
   }[] = [
-    { name: "Node JS", percent: "75%", imgName: "html.png" },
-    { name: "Express JS", percent: "75%", imgName: "html.png" },
-    { name: "Flask", percent: "70%", imgName: "html.png" },
-    { name: "Spring Boot", percent: "70%", imgName: "html.png" },
+    { name: "Node JS", percent: "75%", imgName: "nodejs.png" },
+    {
+      name: "Express JS",
+      percent: "75%",
+      imgName: "expressjs.png",
+      height: 15,
+      width: 15,
+    },
+    {
+      name: "Flask",
+      percent: "70%",
+      imgName: "flask.png",
+      style: { filter: "invert(1)" },
+    },
+    { name: "Spring Boot", percent: "70%", imgName: "spring-boot.png" },
   ];
 
   return (
@@ -34,8 +48,9 @@ function BackendSkills({
                   <Image
                     src={`${imageBasePath}/${skill.imgName}`}
                     alt=""
-                    width="13"
-                    height="13"
+                    width={skill.width ?? 13}
+                    height={skill.height ?? 13}
+                    style={skill.style}
                   />
                   <span>{skill.name}</span>
                 </figure>
