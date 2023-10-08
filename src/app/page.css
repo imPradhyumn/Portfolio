@@ -1,3 +1,9 @@
+main {
+  position: relative;
+  padding-bottom: 2rem;
+  margin-top: 3rem;
+}
+
 .component-container {
   margin: 0 auto;
   margin-top: 4rem;
@@ -89,6 +95,18 @@
   width: 100%;
   object-fit: contain;
   cursor: pointer;
+}
+
+footer {
+  position: absolute;
+  bottom: 0rem;
+  width: 100%;
+  text-align: center;
+  padding: 0.3rem;
+  color: white;
+  box-shadow: 0 0 13px rgba(0, 0, 0);
+  font-family: "Comic Sans MS";
+  font-size: small;
 }
 
 /* Media Queries */
