@@ -4,14 +4,21 @@ import ProfilePic from "../../../../public/img3.jpg";
 import "./intro.css";
 
 function Intro() {
+  const strings: string[] = [
+    "Full Stack Developer",
+    "Python Developer",
+    "Coding Enthusiast",
+    "Open-source Contributor",
+    "Book Lover",
+  ];
+
   return (
     <div id="home-container">
       <div id="intro-details-container">
         <h2 id="greet-text">{"Hello World, I'm"}</h2>
         <h1 id="name-text">{"Pradhyumn Sharma"}</h1>
         <h2 id="profession-text">
-          A{" "}
-          <ReactTyped strings={["Full Stack Developer"]} typeSpeed={50} loop />
+          A <ReactTyped strings={strings} typeSpeed={50} loop />
         </h2>
 
         <div id="intro-para-container">
