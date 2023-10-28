@@ -5,7 +5,7 @@ import "./intro.css";
 
 function Intro() {
   const strings: string[] = [
-    "Full Stack Developer",
+    "Frontend Developer",
     "Python Developer",
     "Coding Enthusiast",
     "Open-source Contributor",
@@ -18,7 +18,12 @@ function Intro() {
         <h2 id="greet-text">{"Hello World, I'm"}</h2>
         <h1 id="name-text">{"Pradhyumn Sharma"}</h1>
         <h2 id="profession-text">
-          A <ReactTyped strings={strings} typeSpeed={50} loop />
+          A{" "}
+          <ReactTyped
+            strings={strings}
+            typeSpeed={50}
+            loop
+          />
         </h2>
 
         <div id="intro-para-container">
@@ -33,7 +38,10 @@ function Intro() {
         </div>
       </div>
       <div id="img-container">
-        <Image src={ProfilePic} alt="profile-image" />
+        <Image
+          src={ProfilePic}
+          alt="profile-image"
+        />
       </div>
     </div>
   );

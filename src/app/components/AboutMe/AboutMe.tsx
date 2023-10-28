@@ -27,9 +27,15 @@ function AboutMe() {
   });
 
   return (
-    <section className="component-container" id="about-me-section">
+    <section
+      className="component-container"
+      id="about-me-section"
+    >
       <header className="heading">
-        <FontAwesomeIcon icon={faLaptopCode} className="heading-icon" />
+        <FontAwesomeIcon
+          icon={faLaptopCode}
+          className="heading-icon"
+        />
         <h2>About Me</h2>
       </header>
 
@@ -104,7 +110,10 @@ function AboutMe() {
         )}
       </div>
 
-      <div ref={ref} id="about-me-items-container">
+      <div
+        ref={ref}
+        id="about-me-items-container"
+      >
         {inView ? (
           <React.Fragment>
             <div className="about-me-items-card">
@@ -128,7 +137,7 @@ function AboutMe() {
               <h2>Experience</h2>
               <ul id="experience-list">
                 <li>
-                  <h3>Full Stack Developer</h3>
+                  <h3>Frontend Developer</h3>
                   <h5>- Capgemini India Private Limited</h5>
                   <h5>- 2021-Current</h5>
                 </li>

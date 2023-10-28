@@ -25,8 +25,8 @@ export const metadata: Metadata = {
     "developer",
     "software",
     "web developer",
-    "front end",
-    "full stack",
+    "frontend developer",
+    "fullstack developer",
     "web design",
     "react",
     "python",
@@ -36,6 +36,7 @@ export const metadata: Metadata = {
     "nextjs",
     "flask",
     "javascript",
+    "pradhyumn sharma",
   ],
   appleWebApp: true,
   verification: {
@@ -57,7 +58,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <Head>
-        <meta property="og:type" content="website" />
+        <meta
+          property="og:type"
+          content="website"
+        />
       </Head>
       <body className={inter.className}>
         <Navbar />

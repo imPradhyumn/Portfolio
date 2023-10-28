@@ -42,7 +42,7 @@ function Navbar() {
 
   function downloadResume(): void {
     const host: string = window.location.href;
-    window.open(`${host}/readme.pdf`, "_blank");
+    window.open(`${host}/Pradhyumn_Sharma_Frontend_Resume_Wo.pdf`, "_blank");
   }
 
   return (
@@ -54,8 +54,15 @@ function Navbar() {
         <div id="nav-links">
           {navLinks.map((item) => {
             return (
-              <Link href={item.link} className="nav-link" key={item.title}>
-                <FontAwesomeIcon icon={item.icon} className="nav-link-icon" />
+              <Link
+                href={item.link}
+                className="nav-link"
+                key={item.title}
+              >
+                <FontAwesomeIcon
+                  icon={item.icon}
+                  className="nav-link-icon"
+                />
                 {item.title}
               </Link>
             );
@@ -63,9 +70,16 @@ function Navbar() {
         </div>
 
         {/* Nav-Menu for Smaller Screen */}
-        <button id="nav-dropdown-btn" onClick={toggleDropdownMenu}>
+        <button
+          id="nav-dropdown-btn"
+          onClick={toggleDropdownMenu}
+        >
           {!isDropDownVisible ? (
-            <FontAwesomeIcon icon={faBars} className="btn-icon" id="fa-bar" />
+            <FontAwesomeIcon
+              icon={faBars}
+              className="btn-icon"
+              id="fa-bar"
+            />
           ) : (
             <FontAwesomeIcon
               icon={faClose}
@@ -74,11 +88,17 @@ function Navbar() {
             />
           )}
         </button>
-        <div id="nav-dropdown-list" ref={dropdownMenuRef}>
+        <div
+          id="nav-dropdown-list"
+          ref={dropdownMenuRef}
+        >
           <ul>
             {navLinks.map((item) => {
               return (
-                <li className="nav-dropdown-link" key={item.title}>
+                <li
+                  className="nav-dropdown-link"
+                  key={item.title}
+                >
                   <Link href={item.link}>
                     <FontAwesomeIcon icon={item.icon} />
                     <span>{item.title}</span>
@@ -95,7 +115,10 @@ function Navbar() {
           href="http://localhost:3000/readme.pdf"
           download={"Pradhyumn_Sharma_Resume"}
         >
-          <button id="download-btn" onClick={downloadResume}>
+          <button
+            id="download-btn"
+            onClick={downloadResume}
+          >
             <span>Download CV</span>
             <FontAwesomeIcon icon={faDownload} />
           </button>
