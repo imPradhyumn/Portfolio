@@ -111,18 +111,13 @@ function Navbar() {
 
         {/* Download Button */}
 
-        <a
-          href="http://localhost:3000/readme.pdf"
-          download={"Pradhyumn_Sharma_Resume"}
+        <button
+          id="download-btn"
+          onClick={downloadResume}
         >
-          <button
-            id="download-btn"
-            onClick={downloadResume}
-          >
-            <span>Download CV</span>
-            <FontAwesomeIcon icon={faDownload} />
-          </button>
-        </a>
+          <span>Download CV</span>
+          <FontAwesomeIcon icon={faDownload} />
+        </button>
       </section>
     </nav>
   );
