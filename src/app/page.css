@@ -98,12 +98,14 @@ main {
 }
 
 footer {
-  position: absolute;
+  position: fixed;
   bottom: 0rem;
+  z-index: 999;
   width: 100%;
   text-align: center;
   padding: 0.3rem;
   color: white;
+  background-color: rgb(20, 19, 26);
   box-shadow: 0 0 13px rgba(0, 0, 0);
   font-family: "Comic Sans MS";
   font-size: small;

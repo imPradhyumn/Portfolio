@@ -42,7 +42,7 @@ function Navbar() {
 
   function downloadResume(): void {
     const host: string = window.location.href;
-    window.open(`${host}/Pradhyumn_Sharma_Frontend_Resume_Wo.pdf`, "_blank");
+    window.open(`${host}/Pradhyumn_Sharma_Resume.pdf`, "_blank");
   }
 
   return (

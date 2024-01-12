@@ -85,7 +85,6 @@ function AboutMe() {
             of the bug. Here, in my current company, I have learned a lot, met\
             new people, networked with them and gained a lot of new skills."
             }
-            \
           </p>
         </div>
 
@@ -137,9 +136,9 @@ function AboutMe() {
               <h2>Experience</h2>
               <ul id="experience-list">
                 <li>
-                  <h3>Frontend Developer</h3>
+                  <h3>Senior Software Engineer (Fullstack)</h3>
                   <h5>- Capgemini India Private Limited</h5>
-                  <h5>- 2021-Current</h5>
+                  <h5>- March 2021-Present</h5>
                 </li>
               </ul>
             </div>

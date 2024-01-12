@@ -1,15 +1,14 @@
 import Image from "next/image";
 import ReactTyped from "react-typed";
-import ProfilePic from "../../../../public/img3.jpg";
+import ProfilePic from "../../../../public/my-pic.jpg";
 import "./intro.css";
 
 function Intro() {
   const strings: string[] = [
-    "Frontend Developer",
-    "Python Developer",
+    "Fullstack Developer",
     "Coding Enthusiast",
-    "Open-source Contributor",
-    "Book Lover",
+    "Learner",
+    "Reader",
   ];
 
   return (

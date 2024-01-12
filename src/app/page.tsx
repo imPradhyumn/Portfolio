@@ -3,7 +3,6 @@
 import React from "react";
 import "./page.css";
 import Main from "./components/Main";
-import { faCopyright } from "@fortawesome/free-solid-svg-icons";
 
 export default function Home() {
   return (
@@ -14,7 +13,10 @@ export default function Home() {
         {/* Social Links */}
         <div id="social-icons-container">
           <div data-label="Github">
-            <a href="https://github.com/imPradhyumn" target="_blank">
+            <a
+              href="https://github.com/imPradhyumn"
+              target="_blank"
+            >
               <img
                 className="social-media-icon"
                 src="static/social-icons/github.png"
@@ -26,7 +28,10 @@ export default function Home() {
           </div>
 
           <div data-label="LinkedIn">
-            <a href="https://linkedin.com/in/im-pradhyumn" target="_blank">
+            <a
+              href="https://linkedin.com/in/im-pradhyumn"
+              target="_blank"
+            >
               <img
                 className="social-media-icon"
                 src="static/social-icons/linkedin.png"
@@ -38,7 +43,10 @@ export default function Home() {
           </div>
 
           <div data-label="UiVerse">
-            <a href="https://uiverse.io/profile/imPradhyumn" target="_blank">
+            <a
+              href="https://uiverse.io/profile/imPradhyumn"
+              target="_blank"
+            >
               <img
                 className="social-media-icon"
                 src="static/social-icons/uiverse.png"
@@ -50,7 +58,10 @@ export default function Home() {
           </div>
 
           <div data-label="Instagram">
-            <a href="https://instagram.com/notorious_proton" target="_blank">
+            <a
+              href="https://instagram.com/notorious_proton"
+              target="_blank"
+            >
               <img
                 className="social-media-icon"
                 src="static/social-icons/insta.png"
