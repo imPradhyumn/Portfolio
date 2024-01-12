@@ -1,5 +1,19 @@
 export const projectsList = [
   {
+    name: "Spotify Clone",
+    imageName: "spotify-logo.png",
+    bgColor: "rgb(19,19,19)",
+    techStack: [
+      "Next.js",
+      "SpringBoot",
+      "PostgreSQL",
+      "TailwindCSS",
+      "Amazon S3",
+    ],
+    link: "https://github.com/imPradhyumn/spotify-clone",
+  },
+
+  {
     name: "Netflix Clone",
     imageName: "netflix-clone.png",
     bgColor: "rgb(19,19,19)",
